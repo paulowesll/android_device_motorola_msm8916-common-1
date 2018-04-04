@@ -23,6 +23,11 @@
         <version>1.0</version>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.broadcastradio</name>
+        <transport arch="32">passthrough</transport>
+        <version>1.0</version>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.camera.provider</name>
         <transport arch="32">passthrough</transport>
         <version>2.4</version>
@@ -179,6 +184,15 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.soundtrigger</name>
+        <transport arch="32">passthrough</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ISoundTriggerHw</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.thermal</name>
         <transport arch="32">passthrough</transport>
         <version>1.0</version>
@@ -211,6 +225,15 @@
         <version>1.1</version>
         <interface>
             <name>IWifi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.wifi.supplicant</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISupplicant</name>
             <instance>default</instance>
         </interface>
     </hal>
